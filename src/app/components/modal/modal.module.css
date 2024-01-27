@@ -1,0 +1,99 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: url("../../../../public/Cursors.svg"), auto;
+}
+
+.btnAdd {
+  width: 100%;
+  height: 51px;
+  padding: 16px, 24px, 16px, 24px;
+  border-radius: 8px;
+  gap: 8px;
+  border: none;
+  color: #fff;
+  cursor: url("../../../../public/Cursors.svg"), auto;
+  background: linear-gradient(90deg, #0796d3 0%, #53c0f0 68.65%);
+}
+
+.inputTitle {
+  width: 100%;
+  height: 51px;
+  padding: 16px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px;
+  gap: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #d7dde9;
+}
+
+.btnDelete {
+  width: 100%;
+  height: 51px;
+  padding: 16px, 24px, 16px, 24px;
+  border-radius: 8px;
+  gap: 8px;
+  border: none;
+  color: #fff;
+  background: linear-gradient(90deg, #d30707 0%, #f05353 68.65%);
+}
+
+.btnCancel {
+  width: 100%;
+  height: 51px;
+  padding: 16px, 24px, 16px, 24px;
+  border-radius: 8px;
+  gap: 8px;
+  background: #e7eefb;
+  border: none;
+  cursor: url("../../../../public/Cursors.svg"), auto;
+}
+
+.modalButtons {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.test {
+  padding-top: 60px;
+}
+.modalContent {
+  background: white;
+  padding: 32px;
+  border-radius: 8px;
+  width: 450px;
+  top: 249px;
+  cursor: url("../../../../public/Cursors.svg"), auto;
+  box-shadow: 5px 24px 48px -12px #0000003c;
+}
+
+.modalContent h2 {
+  margin-bottom: 20px;
+}
+.modalButtons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+  .modal,
+  .modalContent {
+    max-width: 100%;
+    height: 100%;
+  }
+
+  .modalButtons {
+    max-width: 100%;
+    flex-direction: column-reverse;
+  }
+}
